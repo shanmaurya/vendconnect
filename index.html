@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VendConnect | Free Vending Machine — Gyms, Hotels, Offices & More Across Canada</title>
+  <meta name="description" content="VendConnect installs fully-stocked, modern vending machines in gyms, hotels, hospitals, offices and more across Canada — at zero cost to you. No contracts. No upfront fees.">
+  <link rel="canonical" href="https://vendingconnect.ca/">
+  <meta property="og:title" content="VendConnect | Free Vending Machine — Installed, Stocked & Serviced">
+  <meta property="og:description" content="Gyms, hotels, clinics, offices — we install a free fully-stocked vending machine in your space. Zero cost. Zero contracts. 48-hour install.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vendingconnect.ca/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announcement-bar" id="announcement-bar">
+    <img src="canada_logo.png" alt="Canada" class="canada-badge-icon">
+    <span>Serving businesses across Canada — No contracts. No upfront costs. 100% Free placement.</span>
+    <button class="ann-close" onclick="document.getElementById('announcement-bar').style.display='none'" aria-label="Close announcement">
+      <i class="ph ph-x"></i>
+    </button>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="main-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="VendConnect Home">
+        <img src="vendconnect_logo.png" alt="VendConnect Logo" class="logo-img" loading="eager">
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#industries" class="nav-link">Industries</a></li>
+          <li><a href="#services" class="nav-link">Machines</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="#contact" class="btn btn-primary-header" id="get-machine-btn">Get My Free Machine</a>
+      </div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="#how-it-works" class="mobile-link">How It Works</a></li>
+        <li><a href="#industries" class="mobile-link">Industries</a></li>
+        <li><a href="#services" class="mobile-link">Machines</a></li>
+        <li><a href="#faq" class="mobile-link">FAQ</a></li>
+        <li><a href="#contact" class="mobile-link mobile-cta">Get My Free Machine</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-label="Hero section">
+      <div class="hero-bg">
+        <!-- <img src="Hero_vending_image.png" alt="Modern vending machines" class="hero-img" loading="eager"> -->
+        <video src="can_you_please_make_sure_the_i (online-video-cutter.com).mp4" id="hero-vid" class="hero-img" autoplay muted playsinline poster="Hero_vending_image.png"></video>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content-wrap">
+        <!-- LEFT COLUMN -->
+        <div class="hero-left">
+          <div class="hero-badge">
+            <img src="canada_logo.png" alt="Canada" class="canada-badge-icon">
+            CA Canada-wide service
+          </div>
+          <h1 class="hero-title">Free Vending Machine<br>for Your Space —<br><span class="hero-title-accent">Installed &amp; Serviced</span></h1>
+          <p class="hero-subtitle">We place modern Snacks, Drinks, Combo, and smart vending machines at offices, warehouses, schools, gyms, hotels, and more. No upfront cost. Contactless pay. 24/7 support.</p>
+          <a href="#contact" class="btn btn-hero-primary" id="hero-cta-primary">
+            Get a Free Machine <i class="ph ph-arrow-right"></i>
+          </a>
+          <p class="hero-micro">Typical install in 3–4 business days &nbsp;•&nbsp; $0 placement</p>
+        </div>
+
+        <!-- RIGHT COLUMN: floating cards -->
+        <div class="hero-right">
+          <div class="hero-float-card hero-float-top">
+            <p class="hero-float-label">Contact us at</p>
+          <a href="tel:+16046163887" class="hero-float-phone">
+              <i class="ph-fill ph-phone"></i>
+              +1 (604) 616-3887
+            </a>
+          </div>
+          <div class="hero-float-card hero-float-bottom">
+            <div class="hero-avatars">
+              <img src="https://images.pexels.com/photos/26820703/pexels-photo-26820703.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Client" class="hero-avatar">
+              <img src="https://images.pexels.com/photos/27086922/pexels-photo-27086922.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Client" class="hero-avatar">
+              <img src="https://images.pexels.com/photos/37159572/pexels-photo-37159572.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Client" class="hero-avatar">
+              <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Client" class="hero-avatar">
+              <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Client" class="hero-avatar">
+            </div>
+            <p class="hero-float-clients">1k+ Clients</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRUST BAR (below hero) ===== -->
+    <section class="trust-bar-section" aria-label="Trust statistics">
+      <div class="container trust-bar-row">
+        <div class="trust-item">
+          <div class="trust-icon-circle"><i class="ph-fill ph-vignette"></i></div>
+          <div class="trust-text-wrap">
+            <span class="trust-num">100%</span>
+            <span class="trust-label">Machine Uptime</span>
+          </div>
+        </div>
+        <div class="trust-divider-v"></div>
+        <div class="trust-item">
+          <div class="trust-icon-circle"><i class="ph-fill ph-clock-countdown"></i></div>
+          <div class="trust-text-wrap">
+            <span class="trust-num">3–4 days</span>
+            <span class="trust-label">Avg. Install Timeline</span>
+          </div>
+        </div>
+        <div class="trust-divider-v"></div>
+        <div class="trust-item">
+          <div class="trust-icon-circle"><i class="ph-fill ph-headset"></i></div>
+          <div class="trust-text-wrap">
+            <span class="trust-num">24/7</span>
+            <span class="trust-label">Support &amp; Refill</span>
+          </div>
+        </div>
+        <div class="trust-divider-v"></div>
+        <div class="trust-item">
+          <div class="trust-icon-circle"><i class="ph-fill ph-devices"></i></div>
+          <div class="trust-text-wrap">
+            <span class="trust-num">100%</span>
+            <span class="trust-label">Contactless Payment</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INDUSTRIES WE SERVE ===== -->
+    <section class="industries-section" id="industries" aria-label="Industries we serve">
+      <div class="container industries-grid">
+
+        <!-- LEFT: visual column -->
+        <div class="industries-visual-col">
+          <div class="ind-main-img-card">
+            <img src="stylish_machine.png" alt="Stylish Modern Vending Machines" class="ind-main-img" loading="lazy">
+            <div class="ind-img-label">
+              <span>Stylish &amp; Quality Machines</span>
+              <a href="#contact" class="ind-img-arrow" aria-label="Get started"><i class="ph ph-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="ind-bottom-row">
+            <div class="ind-thumb-card">
+              <img src="drinks_vendconnect.png" alt="Drinks Vending Machine" class="ind-thumb-img" loading="lazy">
+            </div>
+            <div class="ind-support-card">
+              <div class="ind-support-icon"><i class="ph-fill ph-headset"></i></div>
+              <h4>Customer Support</h4>
+              <p>We're available 24/7 to support you with any issues that come up.</p>
+              <a href="mailto:info@vendconnect.ca" class="ind-support-email">
+                <i class="ph ph-envelope-simple"></i> info@vendconnect.ca
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: industries list -->
+        <div class="industries-content-col">
+          <div class="section-eyebrow">About Our Company</div>
+          <h2 class="section-title">Industries We Serve</h2>
+          <p class="section-body">We tailor product mix, machine type, and refill schedule to your foot traffic and audience.</p>
+
+          <ul class="industry-list">
+            <li class="industry-item">
+              <span class="industry-check"><i class="ph-fill ph-check-circle"></i></span>
+              <div>
+                <strong>Offices</strong>
+                <span class="industry-sub"> – 100+ staff = perfect fit</span>
+              </div>
+            </li>
+            <li class="industry-item">
+              <span class="industry-check"><i class="ph-fill ph-check-circle"></i></span>
+              <div>
+                <strong>Warehouses</strong>
+                <span class="industry-sub"> – 24/7 shift coverage</span>
+              </div>
+            </li>
+            <li class="industry-item">
+              <span class="industry-check"><i class="ph-fill ph-check-circle"></i></span>
+              <div>
+                <strong>Schools / Colleges</strong>
+                <span class="industry-sub"> – Healthy options ready</span>
+              </div>
+            </li>
+            <li class="industry-item">
+              <span class="industry-check"><i class="ph-fill ph-check-circle"></i></span>
+              <div>
+                <strong>Gyms</strong>
+                <span class="industry-sub"> – Protein &amp; hydration</span>
+              </div>
+            </li>
+            <li class="industry-item">
+              <span class="industry-check"><i class="ph-fill ph-check-circle"></i></span>
+              <div>
+                <strong>Hotels</strong>
+                <span class="industry-sub"> – Lobby &amp; staff areas</span>
+              </div>
+            </li>
+            <li class="industry-item">
+              <span class="industry-check"><i class="ph-fill ph-check-circle"></i></span>
+              <div>
+                <strong>Hospitals / Clinics</strong>
+                <span class="industry-sub"> – Visitor-friendly</span>
+              </div>
+            </li>
+            <li class="industry-item industry-more">
+              <span class="industry-check"><i class="ph-fill ph-check-circle"></i></span>
+              <div>
+                <strong>And Much More!</strong>
+                <span class="industry-sub"> – Restaurants, retail, construction &amp; beyond</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MACHINES — RIGHT MACHINE FOR YOUR SPACE ===== -->
+    <section class="services-section" id="services" aria-label="Our machines">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Machines</div>
+          <h2 class="section-title">The Right Machine for Your Space</h2>
+          <p class="section-subtitle">We match the machine type to your audience — no one-size-fits-all.</p>
+        </div>
+        
+        <div class="machine-cards-grid">
+          <!-- Drinks -->
+          <div class="machine-card">
+            <div class="machine-img-container">
+              <img src="drinks_vendconnect.png" alt="Drinks Vending Machine" class="machine-img" loading="lazy">
+            </div>
+            <div class="machine-content">
+              <h3>Drinks Vending Machine</h3>
+              <p>Cold water, energy drinks, and juices — ideal for gyms, hotels, and high-traffic lobbies.</p>
+            </div>
+          </div>
+          <!-- Snacks -->
+          <div class="machine-card">
+            <div class="machine-img-container">
+              <img src="snacks_only.png" alt="Snacks Vending Machine" class="machine-img" loading="lazy">
+            </div>
+            <div class="machine-content">
+              <h3>Snacks Vending Machine</h3>
+              <p>Chips, protein bars, and healthy options — perfect for break rooms, hospitals, and schools.</p>
+            </div>
+          </div>
+          <!-- Combo -->
+          <div class="machine-card">
+            <div class="machine-img-container">
+              <img src="drinks_beverages.png" alt="Combo Vending Machine" class="machine-img" loading="lazy">
+            </div>
+            <div class="machine-content">
+              <h3>Combo Vending Machine</h3>
+              <p>Snacks and drinks in one footprint — the most popular choice for offices and warehouses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="hiw-section" id="how-it-works" aria-label="How it works">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">The Process</div>
+          <h2 class="section-title">Simple. Fast. No-Risk.</h2>
+          <p class="section-subtitle">From your first click to a fully-stocked machine — in under 48 hours.</p>
+        </div>
+        <div class="hiw-cards">
+          <div class="hiw-card">
+            <div class="hiw-card-num">1</div>
+            <div class="hiw-card-icon-ph"><i class="ph-fill ph-clipboard-text hiw-ph-icon"></i></div>
+            <h3>Fill the Form</h3>
+            <p>Tell us your space type, city, and daily foot traffic. Takes 60 seconds.</p>
+          </div>
+          <div class="hiw-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="hiw-card">
+            <div class="hiw-card-num">2</div>
+            <div class="hiw-card-icon-ph"><i class="ph-fill ph-phone-call hiw-ph-icon"></i></div>
+            <h3>We Call You</h3>
+            <p>Our team confirms your setup and the right machine for your space within 24 hours.</p>
+          </div>
+          <div class="hiw-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="hiw-card">
+            <div class="hiw-card-num">3</div>
+            <div class="hiw-card-icon-ph"><i class="ph-fill ph-package hiw-ph-icon"></i></div>
+            <h3>Machine Arrives</h3>
+            <p>Installed, fully stocked, and maintained for life — at zero cost to you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials-section" id="testimonials" aria-label="Client testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow section-eyebrow--light">What Clients Say</div>
+          <h2 class="section-title section-title--light">Real Spaces. Real Results.</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="ph-fill ph-star testi-star-icon"></i><i class="ph-fill ph-star testi-star-icon"></i>
+              <i class="ph-fill ph-star testi-star-icon"></i><i class="ph-fill ph-star testi-star-icon"></i>
+              <i class="ph-fill ph-star testi-star-icon"></i>
+            </div>
+            <blockquote>"Our gym members were asking about a vending machine for years. VendConnect had one running in the lobby within a week — no cost to us, stocked with exactly what our members needed."</blockquote>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/26820703/pexels-photo-26820703.jpeg?auto=compress&cs=tinysrgb&h=200&w=200" alt="Mike R." class="testi-photo" loading="lazy">
+              <div><strong>Mike R.</strong><span>Gym Owner — Mississauga, ON</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="ph-fill ph-star testi-star-icon"></i><i class="ph-fill ph-star testi-star-icon"></i>
+              <i class="ph-fill ph-star testi-star-icon"></i><i class="ph-fill ph-star testi-star-icon"></i>
+              <i class="ph-fill ph-star testi-star-icon"></i>
+            </div>
+            <blockquote>"Hotel guests used to ask the front desk where to get a late-night snack. That problem is gone. The machine in our hallway handles it — free install, zero maintenance on our side."</blockquote>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/27086922/pexels-photo-27086922.jpeg?auto=compress&cs=tinysrgb&h=200&w=200" alt="Sarah K." class="testi-photo" loading="lazy">
+              <div><strong>Sarah K.</strong><span>Hotel Manager — Vancouver, BC</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="ph-fill ph-star testi-star-icon"></i><i class="ph-fill ph-star testi-star-icon"></i>
+              <i class="ph-fill ph-star testi-star-icon"></i><i class="ph-fill ph-star testi-star-icon"></i>
+              <i class="ph-fill ph-star testi-star-icon"></i>
+            </div>
+            <blockquote>"Our clinic staff are on 12-hour shifts. Having snacks and drinks available in the break room without us organizing it ourselves has been a genuine relief."</blockquote>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/37159572/pexels-photo-37159572.jpeg?auto=compress&cs=tinysrgb&h=200&w=200" alt="Dr. Jason T." class="testi-photo" loading="lazy">
+              <div><strong>Dr. Jason T.</strong><span>Clinic Director — Calgary, AB</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq-section" id="faq" aria-label="Frequently Asked Questions">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Clear Answers</div>
+          <h2 class="section-title">No Surprises. No Catch.</h2>
+        </div>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">Will this ever cost me anything? <i class="ph ph-caret-down"></i></button>
+            <div class="faq-answer"><p>No. The machine, installation, restocking, and maintenance are all completely free to your business. $0 setup. $0 ongoing. The service earns through product sales — none of that cost touches you.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What if the machine breaks or runs out of stock? <i class="ph ph-caret-down"></i></button>
+            <div class="faq-answer"><p>A 24-hour service response is mandated. Inventory is monitored remotely and restocked proactively — so machines rarely run empty, and issues are fixed before you even notice them.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Am I locked into a contract? <i class="ph ph-caret-down"></i></button>
+            <div class="faq-answer"><p>No long-term lock-ins. If you are ever unhappy with the service, the machine is removed with no penalties and no paperwork hassle.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can I choose what's stocked in the machine? <i class="ph ph-caret-down"></i></button>
+            <div class="faq-answer"><p>Yes. You can request specific products — protein bars for a gym, visitor-friendly snacks for a clinic, or local favorites for a hotel. The product mix is tailored to your audience.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT / FINAL CTA ===== -->
+    <section class="contact-section" id="contact" aria-label="Get started">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <div class="section-eyebrow section-eyebrow--light">Get Started</div>
+            <h2 class="section-title section-title--light">Still thinking? Here's what happens next:</h2>
+            <div class="contact-promises">
+              <div class="promise"><span class="promise-check"><i class="ph-fill ph-check promise-check-icon"></i></span>You fill out the 60-second form below.</div>
+              <div class="promise"><span class="promise-check"><i class="ph-fill ph-check promise-check-icon"></i></span>Our team calls you within 24 hours to confirm.</div>
+              <div class="promise"><span class="promise-check"><i class="ph-fill ph-check promise-check-icon"></i></span>Your machine is installed and stocked within 3–4 days.</div>
+              <div class="promise"><span class="promise-check"><i class="ph-fill ph-check promise-check-icon"></i></span>Zero cost. Zero contracts. Zero headaches. Forever.</div>
+            </div>
+          </div>
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="main-contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Full Name *</label>
+                  <input type="text" id="contact-name" name="name" placeholder="John Smith" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number *</label>
+                  <input type="tel" id="contact-phone" name="phone" placeholder="(416) 555-0100" required autocomplete="tel">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Business Email *</label>
+                <input type="email" id="contact-email" name="email" placeholder="you@yourbusiness.com" required autocomplete="email">
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-city">City / Province *</label>
+                  <input type="text" id="contact-city" name="city" placeholder="Toronto, ON" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-space">Space Type *</label>
+                  <select id="contact-space" name="space_type" required>
+                    <option value="" disabled selected>Select your space</option>
+                    <option>Gym / Fitness Centre</option>
+                    <option>Hotel / Hospitality</option>
+                    <option>Hospital / Clinic</option>
+                    <option>Office / Corporate</option>
+                    <option>Warehouse / Manufacturing</option>
+                    <option>School / University</option>
+                    <option>Restaurant / Retail</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-form-submit" id="form-submit-btn">Get My Free Machine</button>
+              <p class="form-disclaimer">We respect your privacy. No spam, ever.</p>
+            </form>
+            <div class="form-success hidden" id="form-success">
+              <div class="success-icon-wrap"><i class="ph-fill ph-check-circle success-ph-icon"></i></div>
+              <h3>Request Received!</h3>
+              <p>A VendConnect team member will call you within 1 business day to get your machine scheduled.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo-link" aria-label="VendConnect Home">
+          <img src="vendconnect_logo.png" alt="VendConnect" class="footer-logo-img" loading="lazy">
+        </a>
+        <p>Canada's vending machine placement service. Gyms, hotels, clinics, offices and more — all served at zero cost.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#services">Machines</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="#contact">Get My Free Machine</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="mailto:info@vendconnect.ca">info@vendconnect.ca</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2025 VendConnect Canada. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
