@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO / AEO Meta ===== -->
+  <title>VendConnect Blog | Vending Machine Tips, Industry Guides & Business Insights</title>
+  <meta name="description" content="Expert guides on vending machine placement, snack selection, ROI, and Canadian business tips — written by the VendConnect team. No cost. Real results.">
+  <link rel="canonical" href="https://vendingconnect.ca/blog/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="VendConnect Blog | Vending Machine Guides for Canadian Businesses">
+  <meta property="og:description" content="Actionable vending machine placement tips, industry insights, and ROI guides for gyms, offices, hotels, and more across Canada.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vendingconnect.ca/blog/">
+  <meta property="og:image" content="https://images.pexels.com/photos/11822977/pexels-photo-11822977.jpeg?auto=compress&cs=tinysrgb&h=627&w=1200">
+
+  <!-- Schema: Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "VendConnect Blog",
+    "url": "https://vendingconnect.ca/blog/",
+    "description": "Expert vending machine placement guides, industry insights, and Canadian business tips by the VendConnect team.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "VendConnect",
+      "url": "https://vendingconnect.ca",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vendingconnect.ca/assets/vendconnect_logo.webp"
+      }
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Shan Maurya",
+      "jobTitle": "Lead Writer, VendConnect Editorial"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announcement-bar" id="announcement-bar">
+    <img src="assets/canada_logo.webp" alt="Canada" class="canada-badge-icon" width="36" height="18">
+    <span>Serving businesses across Canada — No contracts. No upfront costs. 100% Free placement.</span>
+    <button class="ann-close" onclick="document.getElementById('announcement-bar').style.display='none'"
+      aria-label="Close announcement">
+      <i class="ph ph-x"></i>
+    </button>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="main-header">
+    <div class="header-inner">
+      <a href="index.html#" class="logo" aria-label="VendConnect Home">
+        <img src="assets/vendconnect_logo.webp" alt="VendConnect Logo" class="logo-img" loading="eager" width="106"
+          height="64">
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="index.html#industries" class="nav-link">Industries</a></li>
+          <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="index.html#contact" class="btn btn-primary-header" id="get-machine-btn">Get My Free Machine</a>
+      </div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="index.html#how-it-works" class="mobile-link">How It Works</a></li>
+        <li><a href="index.html#industries" class="mobile-link">Industries</a></li>
+        <li><a href="index.html#faq" class="mobile-link">FAQ</a></li>
+        <li><a href="blog.html" class="mobile-link">Blog</a></li>
+        <li><a href="index.html#contact" class="mobile-link mobile-cta">Get My Free Machine</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== BLOG HERO ===== -->
+    <section class="blog-hero" aria-label="Blog hero">
+      <div class="container blog-hero-content">
+        <div class="section-eyebrow">
+          <i class="ph ph-pen-nib"></i> VendConnect Insights
+        </div>
+        <h1 class="blog-hero-title">
+          Vending Machine Guides<br>for <span>Canadian Businesses</span>
+        </h1>
+        <p class="blog-hero-sub">
+          Expert answers on placement, ROI, snack selection and more — written by the VendConnect team so you can make smarter decisions, faster.
+        </p>
+        <div class="blog-search-wrap" role="search">
+          <input type="search" id="blog-search-input" placeholder="Search guides, tips, industries…" aria-label="Search blog">
+          <button class="blog-search-btn" id="blog-search-btn" aria-label="Search">
+            <i class="ph ph-magnifying-glass"></i> Search
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FILTER BAR ===== -->
+    <section class="blog-filter-bar" aria-label="Category filters">
+      <div class="container blog-filter-inner">
+        <span class="filter-label">Topics:</span>
+        <button class="filter-btn active" data-filter="all" id="filter-all">All Posts</button>
+        <button class="filter-btn" data-filter="placement" id="filter-placement">Placement Tips</button>
+        <button class="filter-btn" data-filter="roi" id="filter-roi">ROI & Revenue</button>
+        <button class="filter-btn" data-filter="industries" id="filter-industries">Industries</button>
+        <button class="filter-btn" data-filter="products" id="filter-products">Products & Snacks</button>
+        <button class="filter-btn" data-filter="guides" id="filter-guides">How-To Guides</button>
+      </div>
+    </section>
+
+    <!-- ===== BLOG GRID ===== -->
+    <section class="blog-section" aria-label="Blog posts">
+      <div class="container">
+        <div class="blog-grid" id="blog-grid">
+
+          <!-- ────────────────────────────────────────────────
+               CARD 1 — FEATURED
+          ──────────────────────────────────────────────────── -->
+          <article class="blog-card blog-card--featured" data-category="placement" style="cursor: pointer;" onclick="window.location.href='blog-post.html'">
+            <div class="blog-card-img-wrap">
+              <img
+                class="blog-card-img"
+                src="https://images.pexels.com/photos/11822977/pexels-photo-11822977.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=800"
+                alt="Close-up of a fully-stocked vending machine"
+                loading="eager"
+              >
+              <div class="blog-card-overlay"></div>
+              <div class="blog-card-category">
+                <span class="tag-pill">Placement Tips</span>
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time datetime="2026-06-01">June 1, 2026</time>
+                <span class="blog-card-meta-sep">-</span>
+                <span class="read-time"><i class="ph ph-clock"></i> 7 min read</span>
+              </div>
+              <h2 class="blog-card-title">How to Choose the Perfect Spot for a Free Vending Machine in Your Business</h2>
+              <p class="blog-card-excerpt">
+                Not every corner earns the same. The right placement can double vending revenue. Here's the exact framework VendConnect uses when scoping a new site.
+              </p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author">
+                  <div>
+                    <div class="author-name">Shan Maurya</div>
+                    <div class="author-role">VendConnect Editorial</div>
+                  </div>
+                </div>
+                <span class="blog-card-read-link">Read Article <i class="ph ph-arrow-right"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ────────────────────────────────────────────────
+               CARD 2
+          ──────────────────────────────────────────────────── -->
+          <article class="blog-card" data-category="roi" style="cursor: pointer;" onclick="window.location.href='blogs/earning-money-vending-machines-2026.html'">
+            <div class="blog-card-img-wrap">
+              <img class="blog-card-img" src="https://images.pexels.com/photos/11822977/pexels-photo-11822977.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=600" loading="lazy">
+              <div class="blog-card-overlay"></div>
+              <div class="blog-card-category"><span class="tag-pill">ROI & Revenue</span></div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time datetime="2026-06-13">June 13, 2026</time><span class="blog-card-meta-sep">-</span><span class="read-time"><i class="ph ph-clock"></i> 5 min read</span>
+              </div>
+              <h2 class="blog-card-title">How to Actually Earn Money From Vending Machines in 2026</h2>
+              <p class="blog-card-excerpt">Discover the real ROI and profit margins of vending machines in Canada. We break down the math between smart vs. traditional machines.</p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author"><div><div class="author-name">Shan Maurya</div><div class="author-role">VendConnect Editorial</div></div></div>
+                <span class="blog-card-read-link">Read <i class="ph ph-arrow-right"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ────────────────────────────────────────────────
+               CARD 3
+          ──────────────────────────────────────────────────── -->
+          <article class="blog-card" data-category="industries" style="cursor: pointer;" onclick="window.location.href='blogs/vending-machine-gym-mistakes.html'">
+            <div class="blog-card-img-wrap">
+              <img class="blog-card-img" src="https://images.pexels.com/photos/28556690/pexels-photo-28556690.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=600" loading="lazy">
+              <div class="blog-card-overlay"></div>
+              <div class="blog-card-category"><span class="tag-pill">Industries</span></div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time datetime="2026-06-13">June 13, 2026</time><span class="blog-card-meta-sep">-</span><span class="read-time"><i class="ph ph-clock"></i> 4 min read</span>
+              </div>
+              <h2 class="blog-card-title">Gym Vending Machine Strategy: Maximize Fitness Center Revenue</h2>
+              <p class="blog-card-excerpt">Stop stocking junk food in gyms. Learn how healthy vending and protein options increase fitness center automated retail revenue.</p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author"><div><div class="author-name">Shan Maurya</div><div class="author-role">VendConnect Editorial</div></div></div>
+                <span class="blog-card-read-link">Read <i class="ph ph-arrow-right"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ────────────────────────────────────────────────
+               CARD 4
+          ──────────────────────────────────────────────────── -->
+          <article class="blog-card" data-category="placement" style="cursor: pointer;" onclick="window.location.href='blogs/office-vending-machine-politics.html'">
+            <div class="blog-card-img-wrap">
+              <img class="blog-card-img" src="https://images.pexels.com/photos/21840652/pexels-photo-21840652.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=600" loading="lazy">
+              <div class="blog-card-overlay"></div>
+              <div class="blog-card-category"><span class="tag-pill">Placement Tips</span></div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time datetime="2026-06-13">June 13, 2026</time><span class="blog-card-meta-sep">-</span><span class="read-time"><i class="ph ph-clock"></i> 5 min read</span>
+              </div>
+              <h2 class="blog-card-title">Office Vending Machine Statistics: Why Break Room Snacks Boost Productivity</h2>
+              <p class="blog-card-excerpt">See how office vending machines increase productivity by 25% and drive retention.</p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author"><div><div class="author-name">Shan Maurya</div><div class="author-role">VendConnect Editorial</div></div></div>
+                <span class="blog-card-read-link">Read <i class="ph ph-arrow-right"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ────────────────────────────────────────────────
+               CARD 5
+          ──────────────────────────────────────────────────── -->
+          <article class="blog-card" data-category="guides" style="cursor: pointer;" onclick="window.location.href='blogs/touchless-vending-machines.html'">
+            <div class="blog-card-img-wrap">
+              <img class="blog-card-img" src="https://images.pexels.com/photos/16029615/pexels-photo-16029615.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=600" loading="lazy">
+              <div class="blog-card-overlay"></div>
+              <div class="blog-card-category"><span class="tag-pill">How-To Guides</span></div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time datetime="2026-06-13">June 13, 2026</time><span class="blog-card-meta-sep">-</span><span class="read-time"><i class="ph ph-clock"></i> 4 min read</span>
+              </div>
+              <h2 class="blog-card-title">Touchless Vending Machines & Cashless Payments Canada</h2>
+              <p class="blog-card-excerpt">The Canadian vending machine market is shifting rapidly to cashless payments. See how NFC and smart telemetry drive automated retail.</p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author"><div><div class="author-name">Shan Maurya</div><div class="author-role">VendConnect Editorial</div></div></div>
+                <span class="blog-card-read-link">Read <i class="ph ph-arrow-right"></i></span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /blog-grid -->
+
+        <div class="blog-load-more">
+          <button class="btn-load-more" id="load-more-btn" aria-label="Load more articles">
+            <i class="ph ph-arrow-clockwise"></i> Load More Articles
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html#" class="footer-logo-link" aria-label="VendConnect Home">
+          <img src="assets/vendconnect_logo.webp" alt="VendConnect" class="footer-logo-img" loading="lazy" width="106"
+            height="64">
+        </a>
+        <p>Canada's vending machine placement service. Gyms, hotels, clinics, offices and more — all served at zero
+          cost.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="index.html#industries">Industries</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Get Started</h3>
+        <ul>
+          <li><a href="index.html#contact">Get My Free Machine</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="mailto:info@vendconnect.ca">info@vendconnect.ca</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2025 VendConnect Canada. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="index.html#">Privacy Policy</a>
+          <a href="index.html#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Category Filter ── */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const blogCards = document.querySelectorAll('#blog-grid .blog-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        blogCards.forEach(card => {
+          const cat = card.dataset.category;
+          const show = filter === 'all' || cat === filter;
+          card.style.display = show ? '' : 'none';
+          if (show) {
+            card.style.animation = 'none';
+            requestAnimationFrame(() => {
+              card.style.animation = 'fadeIn 0.4s ease';
+            });
+          }
+        });
+      });
+    });
+
+
+    /* ── Sticky header shadow ── */
+    window.addEventListener('scroll', () => {
+      const hdr = document.getElementById('blog-header');
+      hdr.style.boxShadow = window.scrollY > 10 ? '0 4px 30px rgba(0,0,0,0.05)' : '';
+    });
+
+    /* ── Load More (placeholder) ── */
+    document.getElementById('load-more-btn').addEventListener('click', function() {
+      this.innerHTML = '<i class="ph ph-check-circle"></i> All Articles Loaded';
+      this.disabled = true;
+      this.style.opacity = '0.5';
+    });
+
+    /* ── Fade-in keyframe ── */
+    const style = document.createElement('style');
+    style.textContent = `@keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }`;
+    document.head.appendChild(style);
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
